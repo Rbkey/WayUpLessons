@@ -1,0 +1,340 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+
+
+
+.header {
+    background: linear-gradient(-31deg, #378fd9 0%, #4ebefe 100%);
+    padding: 45px 0px 75px 0px;
+}
+
+.red {
+    color: red;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-bottom: 10px;
+
+}
+
+.info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__offer {
+    color: #fff;
+    width: 556px;
+}
+
+.offer__title {
+    font-family: Ubuntu;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 47px;
+}
+
+span {
+    font-size: 59px;
+    line-height: 73px;
+}
+
+
+.offer__text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 27px;
+    width: 397px;
+    margin-bottom: 45px;
+}
+
+.btn {
+    padding: 22px 0;
+    width: 222px;
+    background-color: #ffd429;
+    color: #2e2a1b;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+.ticket {
+    padding: 100px 0 120px 0;
+}
+
+.title {
+    text-align: center;
+    color: #201b2d;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 73px;
+}
+
+.ticket__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ticket__item {
+    font-family: Ubuntu;
+    max-width: 287px;
+}
+
+.item__row {
+    text-align: center;
+}
+
+.item__icon {
+    margin-bottom: 31px;
+}
+
+.item__title {
+    color: #201b2d;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.item__text {
+    color: #201b2d;
+    font-size: 15px;
+}
+
+
+
+
+.info {
+    padding: 105px 0 110px 0;
+    background-color: #ecf3f8
+}
+
+.info__title {
+    margin-bottom: 57px;
+}
+
+.form {
+    max-width: 343px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 18px 0 18px 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #201b2d;
+    font-family: Ubuntu;
+    font-size: 15px;
+}
+
+.btn1 {
+    width: 100%;
+}
+
+
+
+.footer {
+    background-color: #164d7a;
+    text-align: center;
+    padding: 66px 0 62px 0;
+}
+
+.credits {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+@media(max-width:1200px) {
+    .header .container {
+        max-width: 1140px;
+        padding: 0 30px;
+    }
+
+    .ticket__items {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:992px) {
+    .info__row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .offer__img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .info__offer {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .offer__title {
+        margin-bottom: 30px;
+    }
+
+    .offer__text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .info__offer .btn {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .ticket__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket__item {
+        margin-bottom: 40px;
+    }
+
+    .ticket {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .info__offer {
+        width: 100%;
+    }
+
+    .info__title {
+        line-height: 35px;
+    }
+
+    .info {
+        padding: 55px 0px 60px 0px;
+    }
+}
